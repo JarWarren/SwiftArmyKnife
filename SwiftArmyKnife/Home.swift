@@ -18,9 +18,14 @@ struct Home: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(alignment: .leading) {
+                Text("A mini app store of demo projects")
+                    .foregroundColor(.secondary)
+                    .font(.subheadline)
+                    .padding(.bottom)
                 LazyVGrid(columns: columns) {
-                    DemoAppIcon(name: "Image Fetcher", color: .cyan, destination: ImageFetcher())
+                    DemoAppIcon(name: "ImageFetch", color: .cyan, destination: ImageFetcher())
+                    DemoAppIcon(name: "Pokedex", color: .red, destination: Pokedex())
                 }
                 Spacer()
             }
