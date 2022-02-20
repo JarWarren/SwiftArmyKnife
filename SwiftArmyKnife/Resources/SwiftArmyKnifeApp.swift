@@ -12,6 +12,9 @@ struct SwiftArmyKnifeApp: App {
     var body: some Scene {
         WindowGroup {
             Home()
+                .onAppear {
+                    UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+                }
         }
     }
 }

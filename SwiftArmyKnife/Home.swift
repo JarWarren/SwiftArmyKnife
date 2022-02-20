@@ -25,6 +25,8 @@ struct Home: View {
                     .padding(.bottom)
                 LazyVGrid(columns: columns) {
                     DemoAppIcon(name: "ImageFetch", color: .cyan, destination: ImageFetcher())
+                    DemoAppIcon(name: "Journal", color: .brown, destination: Journal())
+                    DemoAppIcon(name: "Photos", color: .green, destination: Photos())
                     DemoAppIcon(name: "Pokedex", color: .red, destination: Pokedex())
                 }
                 Spacer()

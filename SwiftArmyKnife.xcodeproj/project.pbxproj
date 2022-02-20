@@ -16,6 +16,16 @@
 		B22D585227BD9D4400B52B1F /* PokedexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D585127BD9D4400B52B1F /* PokedexModel.swift */; };
 		B22D585427BD9D4B00B52B1F /* Pokedex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D585327BD9D4B00B52B1F /* Pokedex.swift */; };
 		B22D585827BD9D6400B52B1F /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D585727BD9D6400B52B1F /* Pokemon.swift */; };
+		B22D585B27BDDDD600B52B1F /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D585A27BDDDD600B52B1F /* ShoppingList.swift */; };
+		B22D586927BFEE6800B52B1F /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D586827BFEE6800B52B1F /* Journal.swift */; };
+		B22D586C27BFEF8600B52B1F /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D586B27BFEF8600B52B1F /* JournalEntry.swift */; };
+		B22D586E27BFEFFF00B52B1F /* JournalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D586D27BFEFFF00B52B1F /* JournalModel.swift */; };
+		B22D587227BFFA9700B52B1F /* JournalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D587127BFFA9700B52B1F /* JournalEditor.swift */; };
+		B22D587527BFFABB00B52B1F /* JournalEditorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D587427BFFABB00B52B1F /* JournalEditorModel.swift */; };
+		B22D587727C01FFD00B52B1F /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D587627C01FFD00B52B1F /* PhotoPicker.swift */; };
+		B22D587A27C0288B00B52B1F /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D587927C0288B00B52B1F /* Photos.swift */; };
+		B22D587C27C02C7100B52B1F /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D587B27C02C7100B52B1F /* PhotosModel.swift */; };
+		B22D587E27C02FDF00B52B1F /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D587D27C02FDF00B52B1F /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +39,16 @@
 		B22D585127BD9D4400B52B1F /* PokedexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexModel.swift; sourceTree = "<group>"; };
 		B22D585327BD9D4B00B52B1F /* Pokedex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex.swift; sourceTree = "<group>"; };
 		B22D585727BD9D6400B52B1F /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		B22D585A27BDDDD600B52B1F /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		B22D586827BFEE6800B52B1F /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		B22D586B27BFEF8600B52B1F /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		B22D586D27BFEFFF00B52B1F /* JournalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalModel.swift; sourceTree = "<group>"; };
+		B22D587127BFFA9700B52B1F /* JournalEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEditor.swift; sourceTree = "<group>"; };
+		B22D587427BFFABB00B52B1F /* JournalEditorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEditorModel.swift; sourceTree = "<group>"; };
+		B22D587627C01FFD00B52B1F /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		B22D587927C0288B00B52B1F /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		B22D587B27C02C7100B52B1F /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		B22D587D27C02FDF00B52B1F /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +83,11 @@
 			children = (
 				B22D584B27BD533200B52B1F /* Resources */,
 				B22D583F27BD4B2C00B52B1F /* Home.swift */,
-				B22D585527BD9D4F00B52B1F /* Pokedex */,
+				B22D587827C0200300B52B1F /* Photos */,
 				B22D584C27BD537A00B52B1F /* ImageFetch */,
+				B22D586A27BFEE6C00B52B1F /* Journal */,
+				B22D585527BD9D4F00B52B1F /* Pokedex */,
+				B22D585C27BDDDDA00B52B1F /* ShoppingList */,
 				B22D584327BD4B2D00B52B1F /* Preview Content */,
 			);
 			path = SwiftArmyKnife;
@@ -120,6 +143,61 @@
 				B22D585727BD9D6400B52B1F /* Pokemon.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		B22D585C27BDDDDA00B52B1F /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				B22D585A27BDDDD600B52B1F /* ShoppingList.swift */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		B22D586A27BFEE6C00B52B1F /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				B22D587327BFFA9C00B52B1F /* Editor */,
+				B22D587027BFFA8500B52B1F /* List */,
+				B22D586F27BFFA7F00B52B1F /* Model */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		B22D586F27BFFA7F00B52B1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B22D586B27BFEF8600B52B1F /* JournalEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B22D587027BFFA8500B52B1F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B22D586827BFEE6800B52B1F /* Journal.swift */,
+				B22D586D27BFEFFF00B52B1F /* JournalModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		B22D587327BFFA9C00B52B1F /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				B22D587127BFFA9700B52B1F /* JournalEditor.swift */,
+				B22D587427BFFABB00B52B1F /* JournalEditorModel.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		B22D587827C0200300B52B1F /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				B22D587D27C02FDF00B52B1F /* Camera.swift */,
+				B22D587627C01FFD00B52B1F /* PhotoPicker.swift */,
+				B22D587927C0288B00B52B1F /* Photos.swift */,
+				B22D587B27C02C7100B52B1F /* PhotosModel.swift */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +270,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22D587727C01FFD00B52B1F /* PhotoPicker.swift in Sources */,
 				B22D585827BD9D6400B52B1F /* Pokemon.swift in Sources */,
+				B22D587E27C02FDF00B52B1F /* Camera.swift in Sources */,
+				B22D586E27BFEFFF00B52B1F /* JournalModel.swift in Sources */,
+				B22D587A27C0288B00B52B1F /* Photos.swift in Sources */,
+				B22D585B27BDDDD600B52B1F /* ShoppingList.swift in Sources */,
+				B22D586C27BFEF8600B52B1F /* JournalEntry.swift in Sources */,
+				B22D587227BFFA9700B52B1F /* JournalEditor.swift in Sources */,
+				B22D586927BFEE6800B52B1F /* Journal.swift in Sources */,
 				B22D584E27BD53A000B52B1F /* ImageFetcher.swift in Sources */,
 				B22D584027BD4B2C00B52B1F /* Home.swift in Sources */,
+				B22D587C27C02C7100B52B1F /* PhotosModel.swift in Sources */,
+				B22D587527BFFABB00B52B1F /* JournalEditorModel.swift in Sources */,
 				B22D585427BD9D4B00B52B1F /* Pokedex.swift in Sources */,
 				B22D585227BD9D4400B52B1F /* PokedexModel.swift in Sources */,
 				B22D583E27BD4B2C00B52B1F /* SwiftArmyKnifeApp.swift in Sources */,
