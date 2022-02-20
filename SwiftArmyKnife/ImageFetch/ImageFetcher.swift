@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ImageFetcher: View {
     @StateObject var viewModel = ImageFetcherModel()
-    
+
     var body: some View {
         VStack {
             if let image = viewModel.randomImage {

@@ -13,9 +13,9 @@ struct Home: View {
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible()),
-        GridItem(.flexible())
+        GridItem(.flexible()),
     ]
-    
+
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {

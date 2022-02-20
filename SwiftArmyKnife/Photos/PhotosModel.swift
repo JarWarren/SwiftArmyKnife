@@ -12,12 +12,11 @@ class PhotosModel: ObservableObject {
     @Published var image: UIImage?
     @Published var presentedView: PresentedView?
     @Published var isPresentingAlert = false
-    
-    
+
     enum PresentedView: String, Identifiable {
         case photoPicker
         case camera
-        
+
         var id: String { rawValue }
     }
 }

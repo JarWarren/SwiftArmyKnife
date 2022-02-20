@@ -11,9 +11,9 @@ struct JournalEditor: View {
     @StateObject var model = JournalEditorModel()
     @ObservedObject var journalModel: JournalModel
     @Environment(\.dismiss) var dismiss
-    
+
     var entry: JournalEntry?
-    
+
     var body: some View {
         VStack {
             TextField("Entry title", text: $model.title)

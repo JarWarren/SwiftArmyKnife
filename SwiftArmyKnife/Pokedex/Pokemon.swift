@@ -11,9 +11,8 @@ struct Pokemon: Decodable {
     let name: String
     let id: Int
     let sprites: PokemonSprites
-    
+
     struct PokemonSprites: Decodable {
         let frontDefault: URL
     }
 }
-

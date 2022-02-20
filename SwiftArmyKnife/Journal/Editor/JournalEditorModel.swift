@@ -10,7 +10,7 @@ import Foundation
 class JournalEditorModel: ObservableObject {
     @Published var title = ""
     @Published var contents = ""
-    
+
     func onAppear(entry: JournalEntry) {
         title = entry.title
         contents = entry.contents

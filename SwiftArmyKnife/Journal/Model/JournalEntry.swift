@@ -10,7 +10,7 @@ import Foundation
 class JournalEntry: Codable {
     var title: String
     var contents: String
-    
+
     init(title: String, contents: String) {
         self.title = title
         self.contents = contents
@@ -21,7 +21,7 @@ extension JournalEntry: Equatable, Hashable {
     static func == (lhs: JournalEntry, rhs: JournalEntry) -> Bool {
         lhs === rhs
     }
-    
+
     func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(self))
     }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Journal: View {
     @StateObject var model = JournalModel()
-    
+
     var body: some View {
         List {
             ForEach(model.entries, id: \.self) { entry in
@@ -21,7 +21,7 @@ struct Journal: View {
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }
-                }               
+                }
             }
             .onDelete(perform: model.delete(indexSet:))
         }
