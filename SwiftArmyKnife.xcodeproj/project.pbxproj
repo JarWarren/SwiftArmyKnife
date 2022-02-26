@@ -26,7 +26,26 @@
 		B22D587A27C0288B00B52B1F /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D587927C0288B00B52B1F /* Photos.swift */; };
 		B22D587C27C02C7100B52B1F /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D587B27C02C7100B52B1F /* PhotosModel.swift */; };
 		B22D587E27C02FDF00B52B1F /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D587D27C02FDF00B52B1F /* Camera.swift */; };
+		B254CB4E27CA7AC500D7B9EC /* JournalModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB4D27CA7AC500D7B9EC /* JournalModelTests.swift */; };
+		B254CB5B27CA82D200D7B9EC /* PokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB5A27CA82D200D7B9EC /* PokedexUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B254CB4F27CA7AC500D7B9EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B22D583227BD4B2C00B52B1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B22D583927BD4B2C00B52B1F;
+			remoteInfo = SwiftArmyKnife;
+		};
+		B254CB5E27CA82D200D7B9EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B22D583227BD4B2C00B52B1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B22D583927BD4B2C00B52B1F;
+			remoteInfo = SwiftArmyKnife;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B22D583A27BD4B2C00B52B1F /* SwiftArmyKnife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArmyKnife.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,10 +68,28 @@
 		B22D587927C0288B00B52B1F /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		B22D587B27C02C7100B52B1F /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
 		B22D587D27C02FDF00B52B1F /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		B254CB4B27CA7AC500D7B9EC /* SwiftArmyKnifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftArmyKnifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B254CB4D27CA7AC500D7B9EC /* JournalModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalModelTests.swift; sourceTree = "<group>"; };
+		B254CB5827CA82D200D7B9EC /* SwiftArmyKnifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftArmyKnifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B254CB5A27CA82D200D7B9EC /* PokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B22D583727BD4B2C00B52B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B254CB4827CA7AC500D7B9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B254CB5527CA82D200D7B9EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				B22D583C27BD4B2C00B52B1F /* SwiftArmyKnife */,
+				B254CB4C27CA7AC500D7B9EC /* SwiftArmyKnifeTests */,
+				B254CB5927CA82D200D7B9EC /* SwiftArmyKnifeUITests */,
 				B22D583B27BD4B2C00B52B1F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				B22D583A27BD4B2C00B52B1F /* SwiftArmyKnife.app */,
+				B254CB4B27CA7AC500D7B9EC /* SwiftArmyKnifeTests.xctest */,
+				B254CB5827CA82D200D7B9EC /* SwiftArmyKnifeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +241,22 @@
 			path = Photos;
 			sourceTree = "<group>";
 		};
+		B254CB4C27CA7AC500D7B9EC /* SwiftArmyKnifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B254CB4D27CA7AC500D7B9EC /* JournalModelTests.swift */,
+			);
+			path = SwiftArmyKnifeTests;
+			sourceTree = "<group>";
+		};
+		B254CB5927CA82D200D7B9EC /* SwiftArmyKnifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B254CB5A27CA82D200D7B9EC /* PokedexUITests.swift */,
+			);
+			path = SwiftArmyKnifeUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,6 +277,42 @@
 			productReference = B22D583A27BD4B2C00B52B1F /* SwiftArmyKnife.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B254CB4A27CA7AC500D7B9EC /* SwiftArmyKnifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B254CB5327CA7AC600D7B9EC /* Build configuration list for PBXNativeTarget "SwiftArmyKnifeTests" */;
+			buildPhases = (
+				B254CB4727CA7AC500D7B9EC /* Sources */,
+				B254CB4827CA7AC500D7B9EC /* Frameworks */,
+				B254CB4927CA7AC500D7B9EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B254CB5027CA7AC500D7B9EC /* PBXTargetDependency */,
+			);
+			name = SwiftArmyKnifeTests;
+			productName = SwiftArmyKnifeTests;
+			productReference = B254CB4B27CA7AC500D7B9EC /* SwiftArmyKnifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B254CB5727CA82D200D7B9EC /* SwiftArmyKnifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B254CB6027CA82D200D7B9EC /* Build configuration list for PBXNativeTarget "SwiftArmyKnifeUITests" */;
+			buildPhases = (
+				B254CB5427CA82D200D7B9EC /* Sources */,
+				B254CB5527CA82D200D7B9EC /* Frameworks */,
+				B254CB5627CA82D200D7B9EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B254CB5F27CA82D200D7B9EC /* PBXTargetDependency */,
+			);
+			name = SwiftArmyKnifeUITests;
+			productName = SwiftArmyKnifeUITests;
+			productReference = B254CB5827CA82D200D7B9EC /* SwiftArmyKnifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,6 +325,14 @@
 				TargetAttributes = {
 					B22D583927BD4B2C00B52B1F = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					B254CB4A27CA7AC500D7B9EC = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B22D583927BD4B2C00B52B1F;
+					};
+					B254CB5727CA82D200D7B9EC = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B22D583927BD4B2C00B52B1F;
 					};
 				};
 			};
@@ -249,6 +350,8 @@
 			projectRoot = "";
 			targets = (
 				B22D583927BD4B2C00B52B1F /* SwiftArmyKnife */,
+				B254CB4A27CA7AC500D7B9EC /* SwiftArmyKnifeTests */,
+				B254CB5727CA82D200D7B9EC /* SwiftArmyKnifeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +363,20 @@
 			files = (
 				B22D584527BD4B2D00B52B1F /* Preview Assets.xcassets in Resources */,
 				B22D584227BD4B2D00B52B1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B254CB4927CA7AC500D7B9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B254CB5627CA82D200D7B9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +407,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B254CB4727CA7AC500D7B9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B254CB4E27CA7AC500D7B9EC /* JournalModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B254CB5427CA82D200D7B9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B254CB5B27CA82D200D7B9EC /* PokedexUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B254CB5027CA7AC500D7B9EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B22D583927BD4B2C00B52B1F /* SwiftArmyKnife */;
+			targetProxy = B254CB4F27CA7AC500D7B9EC /* PBXContainerItemProxy */;
+		};
+		B254CB5F27CA82D200D7B9EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B22D583927BD4B2C00B52B1F /* SwiftArmyKnife */;
+			targetProxy = B254CB5E27CA82D200D7B9EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B22D584627BD4B2D00B52B1F /* Debug */ = {
@@ -467,6 +613,76 @@
 			};
 			name = Release;
 		};
+		B254CB5127CA7AC500D7B9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QHZ53782H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jarwarren.SwiftArmyKnifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftArmyKnife.app/SwiftArmyKnife";
+			};
+			name = Debug;
+		};
+		B254CB5227CA7AC500D7B9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QHZ53782H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jarwarren.SwiftArmyKnifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftArmyKnife.app/SwiftArmyKnife";
+			};
+			name = Release;
+		};
+		B254CB6127CA82D200D7B9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QHZ53782H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jarwarren.SwiftArmyKnifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftArmyKnife;
+			};
+			name = Debug;
+		};
+		B254CB6227CA82D200D7B9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QHZ53782H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jarwarren.SwiftArmyKnifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftArmyKnife;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -484,6 +700,24 @@
 			buildConfigurations = (
 				B22D584927BD4B2D00B52B1F /* Debug */,
 				B22D584A27BD4B2D00B52B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B254CB5327CA7AC600D7B9EC /* Build configuration list for PBXNativeTarget "SwiftArmyKnifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B254CB5127CA7AC500D7B9EC /* Debug */,
+				B254CB5227CA7AC500D7B9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B254CB6027CA82D200D7B9EC /* Build configuration list for PBXNativeTarget "SwiftArmyKnifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B254CB6127CA82D200D7B9EC /* Debug */,
+				B254CB6227CA82D200D7B9EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

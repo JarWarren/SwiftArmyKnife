@@ -12,7 +12,7 @@ struct Pokedex: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("Enter a Pokemon id or name", text: $viewModel.searchTerm)
+                TextField("Enter a Pokemon ID or name", text: $viewModel.searchTerm)
                     .textFieldStyle(.roundedBorder)
                 Button(action: {
                     Task {
@@ -22,12 +22,13 @@ struct Pokedex: View {
                     Image(systemName: "magnifyingglass")
                 })
             }
-            if let image = viewModel.sprite {
-                Image(uiImage: image)
-                    .resizable()
-                    .aspectRatio(1, contentMode: .fit)
-            }
             if let pokemon = viewModel.pokemon {
+                if let image = viewModel.sprite {
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(1, contentMode: .fit)
+                        .accessibilityLabel("\(pokemon.name) sprite")
+                }
                 Text(pokemon.name.capitalized)
                     .font(.largeTitle)
                 Text("\(pokemon.id)")
