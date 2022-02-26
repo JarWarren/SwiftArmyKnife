@@ -16,22 +16,28 @@ class PokedexUITests: XCTestCase {
         app.launch()
     }
     
-    func testSearchByID() {
-        // Setup
-        app.buttons.matching(identifier: "Pokedex").firstMatch.tap()
+    func testSearchByIDAndName() {
+        app.buttons["Pokedex"].tap()
         XCTAssertTrue(app.textFields.firstMatch.waitForExistence(timeout: 5))
         
-        // Verify the initial state
-        XCTAssertTrue(app.staticTexts.matching(identifier: "Pokedex").firstMatch.exists)
+        XCTAssertTrue(app.staticTexts["Pokedex"].exists)
         XCTAssertFalse(app.images.firstMatch.exists)
         
-        // Perform test
         app.textFields.firstMatch.tap()
         app.textFields.firstMatch.typeText("151")
-        app.buttons.matching(identifier: "Search").firstMatch.tap()
+        app.buttons["Search"].tap()
         
-        // Verify final state
-        XCTAssertTrue(app.images.firstMatch.waitForExistence(timeout: 10))
-        XCTAssertTrue(app.staticTexts.matching(identifier: "Mew").firstMatch.exists)
+        XCTAssertTrue(app.images["mew sprite"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.staticTexts["Mew"].exists)
+        
+        app.textFields.firstMatch.tap()
+        let deleteString = String(repeating: XCUIKeyboardKey.delete.rawValue, count: 3)
+        app.textFields.firstMatch.typeText(deleteString)
+        app.textFields.firstMatch.typeText("mewtwo")
+        
+        app.buttons["Search"].tap()
+        
+        XCTAssertTrue(app.images["mewtwo sprite"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.staticTexts["Mewtwo"].exists)
     }
 }
