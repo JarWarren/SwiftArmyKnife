@@ -17,6 +17,7 @@ struct Photos: View {
             }
         }
         .navigationTitle("Photos")
+        .onAppear(perform: model.onAppear)
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button(action: {

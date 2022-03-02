@@ -24,8 +24,9 @@ struct Home: View {
                     .font(.subheadline)
                     .padding(.bottom)
                 LazyVGrid(columns: columns) {
-                    DemoAppIcon(name: "ImageFetch", color: .cyan, destination: ImageFetcher())
+                    DemoAppIcon(name: "Image", color: .cyan, destination: ImageFetcher())
                     DemoAppIcon(name: "Journal", color: .brown, destination: Journal())
+                    DemoAppIcon(name: "Mood", color: .purple, destination: Mood())
                     DemoAppIcon(name: "Photos", color: .green, destination: Photos())
                     DemoAppIcon(name: "Pokedex", color: .red, destination: Pokedex())
                 }
