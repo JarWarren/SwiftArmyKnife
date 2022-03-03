@@ -15,7 +15,8 @@ struct Moods: View {
         endPoint: .bottom
     )
     let columns = Array(repeating: GridItem(.flexible()), count: 7)
-
+    let colors = [Color.red, .orange, .yellow, .blue, .green,
+                  .gray, .gray, .gray, .gray, .gray, .gray]
     
     var body: some View {
         VStack {
@@ -27,8 +28,16 @@ struct Moods: View {
                         }
                     }
                     ForEach(model.dates, id: \.self) { date in
-                        Circle().fill(Color.gray)
-                            .padding(.top)
+                        if let random = colors.randomElement(),
+                           random == .gray {
+                            Rectangle().fill(random)
+                                .aspectRatio(1, contentMode: .fit)
+                        } else {
+                            Rectangle().fill(Color.pink.opacity(Double.random(in: 0.2...1)))
+                            
+                                .aspectRatio(1, contentMode: .fit)
+//                                .foregroundColor(.pink.opacity(Double.random(in: 0.2...1)))
+                        }
                     }
                 }
             }
