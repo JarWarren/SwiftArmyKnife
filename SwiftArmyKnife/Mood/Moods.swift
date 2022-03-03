@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Moods: View {
-    @AppStorage("currentYear") var currentYear: Int = 2022
     @StateObject var model = MoodsModel()
     static let gradient = LinearGradient(
         gradient: Gradient(colors: [.pink, .purple]),
@@ -44,30 +43,11 @@ struct Moods: View {
             })
         }
         .padding()
-        .navigationTitle("Moods \(currentYear)")
+        .navigationTitle("Moods " + String(Calendar.current.component(.year, from: Date())))
         .popover(isPresented: $model.isPresentingMoodEditor) {
             Text("Mood Editor")
         }
-        .onAppear { model.updateDates(year: currentYear) }
-        .onChange(of: currentYear) { newValue in
-            model.updateDates(year: newValue)
-        }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    currentYear -= 1
-                }, label: {
-                    Text("Previous")
-                })
-            }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    currentYear += 1
-                }, label: {
-                    Text("Next")
-                })
-            }
-        }
+        .onAppear(perform: model.onAppear)
     }
 }
 

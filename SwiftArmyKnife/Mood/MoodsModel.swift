@@ -12,11 +12,12 @@ class MoodsModel: ObservableObject {
     @Published var dates: [Date] = []
     @Published var firstDayOfWeek = 7
     
-    func updateDates(year: Int) {
+    func onAppear() {
         let calendar = Calendar.current
-        let date = calendar.date(bySetting: .year, value: year, of: Date()) ?? Date()
-        firstDayOfWeek = calendar.component(.weekday, from: date)
+        let components = calendar.dateComponents([.year], from: Date())
+        let januaryFirst = calendar.date(from: components) ?? Date()
+        firstDayOfWeek = calendar.component(.weekday, from: januaryFirst)
         dates = (0...364)
-            .compactMap { calendar.date(byAdding: .day, value: $0, to: date) }
+            .compactMap { calendar.date(byAdding: .day, value: $0, to: januaryFirst) }
     }
 }
