@@ -28,7 +28,9 @@
 		B22D587E27C02FDF00B52B1F /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D587D27C02FDF00B52B1F /* Camera.swift */; };
 		B254CB4E27CA7AC500D7B9EC /* JournalModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB4D27CA7AC500D7B9EC /* JournalModelTests.swift */; };
 		B254CB5B27CA82D200D7B9EC /* PokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB5A27CA82D200D7B9EC /* PokedexUITests.swift */; };
-		B254CB6427CF2CB800D7B9EC /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB6327CF2CB800D7B9EC /* Mood.swift */; };
+		B254CB6427CF2CB800D7B9EC /* Moods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB6327CF2CB800D7B9EC /* Moods.swift */; };
+		B254CB6827CF33B300D7B9EC /* MoodsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B254CB6627CF33B300D7B9EC /* MoodsDataModel.xcdatamodeld */; };
+		B254CB6A27D0695300D7B9EC /* MoodsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB6927D0695300D7B9EC /* MoodsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +75,9 @@
 		B254CB4D27CA7AC500D7B9EC /* JournalModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalModelTests.swift; sourceTree = "<group>"; };
 		B254CB5827CA82D200D7B9EC /* SwiftArmyKnifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftArmyKnifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B254CB5A27CA82D200D7B9EC /* PokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITests.swift; sourceTree = "<group>"; };
-		B254CB6327CF2CB800D7B9EC /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		B254CB6327CF2CB800D7B9EC /* Moods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moods.swift; sourceTree = "<group>"; };
+		B254CB6727CF33B300D7B9EC /* MoodDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoodDataModel.xcdatamodel; sourceTree = "<group>"; };
+		B254CB6927D0695300D7B9EC /* MoodsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,7 +267,9 @@
 		B254CB6527CF2E8A00D7B9EC /* Mood */ = {
 			isa = PBXGroup;
 			children = (
-				B254CB6327CF2CB800D7B9EC /* Mood.swift */,
+				B254CB6327CF2CB800D7B9EC /* Moods.swift */,
+				B254CB6927D0695300D7B9EC /* MoodsModel.swift */,
+				B254CB6627CF33B300D7B9EC /* MoodsDataModel.xcdatamodeld */,
 			);
 			path = Mood;
 			sourceTree = "<group>";
@@ -408,7 +414,8 @@
 				B22D587227BFFA9700B52B1F /* JournalEditor.swift in Sources */,
 				B22D586927BFEE6800B52B1F /* Journal.swift in Sources */,
 				B22D584E27BD53A000B52B1F /* ImageFetcher.swift in Sources */,
-				B254CB6427CF2CB800D7B9EC /* Mood.swift in Sources */,
+				B254CB6A27D0695300D7B9EC /* MoodsModel.swift in Sources */,
+				B254CB6427CF2CB800D7B9EC /* Moods.swift in Sources */,
 				B22D584027BD4B2C00B52B1F /* Home.swift in Sources */,
 				B22D587C27C02C7100B52B1F /* PhotosModel.swift in Sources */,
 				B22D587527BFFABB00B52B1F /* JournalEditorModel.swift in Sources */,
@@ -416,6 +423,7 @@
 				B22D585227BD9D4400B52B1F /* PokedexModel.swift in Sources */,
 				B22D583E27BD4B2C00B52B1F /* SwiftArmyKnifeApp.swift in Sources */,
 				B22D585027BD546B00B52B1F /* ImageFetcherModel.swift in Sources */,
+				B254CB6827CF33B300D7B9EC /* MoodsDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,6 +743,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B254CB6627CF33B300D7B9EC /* MoodsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B254CB6727CF33B300D7B9EC /* MoodDataModel.xcdatamodel */,
+			);
+			currentVersion = B254CB6727CF33B300D7B9EC /* MoodDataModel.xcdatamodel */;
+			path = MoodsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B22D583227BD4B2C00B52B1F /* Project object */;
 }

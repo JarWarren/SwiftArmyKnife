@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName="Activity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="moods" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mood" inverseName="activities" inverseEntity="Mood"/>
+    </entity>
+    <entity name="Mood" representedClassName="Mood" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="activities" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="moods" inverseEntity="Activity"/>
+    </entity>
+    <elements>
+        <element name="Mood" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="Activity" positionX="-54" positionY="9" width="128" height="59"/>
+    </elements>
+</model>
