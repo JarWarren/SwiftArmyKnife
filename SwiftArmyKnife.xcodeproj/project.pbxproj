@@ -31,6 +31,11 @@
 		B254CB6427CF2CB800D7B9EC /* Moods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB6327CF2CB800D7B9EC /* Moods.swift */; };
 		B254CB6827CF33B300D7B9EC /* MoodsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B254CB6627CF33B300D7B9EC /* MoodsDataModel.xcdatamodeld */; };
 		B254CB6A27D0695300D7B9EC /* MoodsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB6927D0695300D7B9EC /* MoodsModel.swift */; };
+		B254CB7C27D3BCFE00D7B9EC /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB7B27D3BCFE00D7B9EC /* TodoList.swift */; };
+		B254CB8027D3BEAA00D7B9EC /* TodoListStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB7F27D3BEAA00D7B9EC /* TodoListStorage.swift */; };
+		B254CB8427D3BF8E00D7B9EC /* Todos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B254CB8227D3BF8E00D7B9EC /* Todos.xcdatamodeld */; };
+		B254CB8627D3C2D300D7B9EC /* Todos+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB8527D3C2D300D7B9EC /* Todos+Convenience.swift */; };
+		B254CB8827D3C4A800D7B9EC /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254CB8727D3C4A800D7B9EC /* TodoListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,11 @@
 		B254CB6327CF2CB800D7B9EC /* Moods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moods.swift; sourceTree = "<group>"; };
 		B254CB6727CF33B300D7B9EC /* MoodDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoodDataModel.xcdatamodel; sourceTree = "<group>"; };
 		B254CB6927D0695300D7B9EC /* MoodsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsModel.swift; sourceTree = "<group>"; };
+		B254CB7B27D3BCFE00D7B9EC /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		B254CB7F27D3BEAA00D7B9EC /* TodoListStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListStorage.swift; sourceTree = "<group>"; };
+		B254CB8327D3BF8E00D7B9EC /* Todos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todos.xcdatamodel; sourceTree = "<group>"; };
+		B254CB8527D3C2D300D7B9EC /* Todos+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todos+Convenience.swift"; sourceTree = "<group>"; };
+		B254CB8727D3C4A800D7B9EC /* TodoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +140,7 @@
 			children = (
 				B22D584B27BD533200B52B1F /* Resources */,
 				B22D583F27BD4B2C00B52B1F /* Home.swift */,
+				B254CB7D27D3BD0300D7B9EC /* TodoList */,
 				B254CB6527CF2E8A00D7B9EC /* Mood */,
 				B22D587827C0200300B52B1F /* Photos */,
 				B22D584C27BD537A00B52B1F /* ImageFetch */,
@@ -274,6 +285,34 @@
 			path = Mood;
 			sourceTree = "<group>";
 		};
+		B254CB7D27D3BD0300D7B9EC /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				B254CB7E27D3BEA100D7B9EC /* Views */,
+				B254CB8127D3BEAE00D7B9EC /* Storage */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		B254CB7E27D3BEA100D7B9EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B254CB7B27D3BCFE00D7B9EC /* TodoList.swift */,
+				B254CB8727D3C4A800D7B9EC /* TodoListModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B254CB8127D3BEAE00D7B9EC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B254CB7F27D3BEAA00D7B9EC /* TodoListStorage.swift */,
+				B254CB8527D3C2D300D7B9EC /* Todos+Convenience.swift */,
+				B254CB8227D3BF8E00D7B9EC /* Todos.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,9 +443,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B254CB8827D3C4A800D7B9EC /* TodoListModel.swift in Sources */,
 				B22D587727C01FFD00B52B1F /* PhotoPicker.swift in Sources */,
 				B22D585827BD9D6400B52B1F /* Pokemon.swift in Sources */,
 				B22D587E27C02FDF00B52B1F /* Camera.swift in Sources */,
+				B254CB8627D3C2D300D7B9EC /* Todos+Convenience.swift in Sources */,
+				B254CB8027D3BEAA00D7B9EC /* TodoListStorage.swift in Sources */,
 				B22D586E27BFEFFF00B52B1F /* JournalModel.swift in Sources */,
 				B22D587A27C0288B00B52B1F /* Photos.swift in Sources */,
 				B22D585B27BDDDD600B52B1F /* ShoppingList.swift in Sources */,
@@ -419,6 +461,8 @@
 				B22D584027BD4B2C00B52B1F /* Home.swift in Sources */,
 				B22D587C27C02C7100B52B1F /* PhotosModel.swift in Sources */,
 				B22D587527BFFABB00B52B1F /* JournalEditorModel.swift in Sources */,
+				B254CB7C27D3BCFE00D7B9EC /* TodoList.swift in Sources */,
+				B254CB8427D3BF8E00D7B9EC /* Todos.xcdatamodeld in Sources */,
 				B22D585427BD9D4B00B52B1F /* Pokedex.swift in Sources */,
 				B22D585227BD9D4400B52B1F /* PokedexModel.swift in Sources */,
 				B22D583E27BD4B2C00B52B1F /* SwiftArmyKnifeApp.swift in Sources */,
@@ -752,6 +796,16 @@
 			);
 			currentVersion = B254CB6727CF33B300D7B9EC /* MoodDataModel.xcdatamodel */;
 			path = MoodsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B254CB8227D3BF8E00D7B9EC /* Todos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B254CB8327D3BF8E00D7B9EC /* Todos.xcdatamodel */,
+			);
+			currentVersion = B254CB8327D3BF8E00D7B9EC /* Todos.xcdatamodel */;
+			path = Todos.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -29,6 +29,7 @@ struct Home: View {
                     DemoAppIcon(name: "Moods", color: .purple, destination: Moods())
                     DemoAppIcon(name: "Photos", color: .green, destination: Photos())
                     DemoAppIcon(name: "Pokedex", color: .red, destination: Pokedex())
+                    DemoAppIcon(name: "Todoey", color: .yellow, destination: TodoList())
                 }
                 Spacer()
             }
